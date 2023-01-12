@@ -14,9 +14,10 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
-    }
+        $all_comics = Comic::all();
 
+        return view('home', compact('all_comics'));
+    }
     /**
      * Show the form for creating a new resource.
      *
