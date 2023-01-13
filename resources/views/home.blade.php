@@ -2,6 +2,9 @@
 
 @section('content')
   <div class="container-md mx-auto h-full bg-slate-300">
+    @if (session('deleted'))
+      <p>{{ session('deleted') }}</p>
+    @endif
     @forelse ($all_comics as $comic)
       <div class="shadow-md shadow-space-400 rounded-lg overflow-hidden flex  max-h-[80%] mb-5">
         <div class="flex justify-center max-w-[50%]">
