@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .btn-primary {
+        @apply bg-mint-500 px-2 py-1 text-bisque-50 rounded-lg hover:bg-mint-600
+    }
+
+    .btn-danger {
+        @apply bg-pastel-500 px-2 py-1 text-bisque-50 rounded-lg hover:bg-pastel-600
+      }
+}
